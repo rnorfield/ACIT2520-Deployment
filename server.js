@@ -32,12 +32,12 @@ app.use((request, response, next) => {
 });
 
 //Maintenance message
-// app.use((request, response, next) => {
-// 	response.render('maintenance.hbs', {
-// 		title: 'Site down',
-// 		message: 'Site currently down for maintenance'
-// 	});
-// });
+app.use((request, response, next) => {
+	response.render('maintenance.hbs', {
+		title: 'Site down',
+		message: 'Site currently down for maintenance. I edited this for the second part of the challenge!'
+	});
+});
 
 
 app.get('/', (request, response) => {
